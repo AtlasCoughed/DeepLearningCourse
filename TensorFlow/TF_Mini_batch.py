@@ -17,3 +17,4 @@ test_labels = mnist.test.labels.astype(np.float32)
 # Weights & bias
 weights = tf.Variable(tf.random_normal([n_input, n_classes]))
 bias = tf.Variable(tf.random_normal([n_classes]))
+
