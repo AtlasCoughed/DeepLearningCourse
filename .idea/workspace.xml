@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09a695fd-efc2-4fa6-8957-18379b318f4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlow/TF_Deep_Neural_Net.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlow/TF_Rectified_linear_units.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlow/TF_LoadingVariables.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlow/TF_SavingWeightsBiases.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,11 +82,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TF_Deep_Neural_Net.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TF_Deep_Neural_Net.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TensorFlow/TF_Deep_Neural_Net.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
               <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TF_SavingWeightsBiases.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TensorFlow/TF_SavingWeightsBiases.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TF_LoadingVariables.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TensorFlow/TF_LoadingVariables.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -142,6 +162,8 @@
         <option value="$PROJECT_DIR$/TensorFlow/TS_Epochs_pt1.py" />
         <option value="$PROJECT_DIR$/TensorFlow/TF_Rectified_linear_units.py" />
         <option value="$PROJECT_DIR$/TensorFlow/TF_Deep_Neural_Net.py" />
+        <option value="$PROJECT_DIR$/TensorFlow/TF_SavingWeightsBiases.py" />
+        <option value="$PROJECT_DIR$/TensorFlow/TF_LoadingVariables.py" />
       </list>
     </option>
   </component>
@@ -988,6 +1010,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TensorFlow/TF_SavingWeightsBiases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TensorFlow/TF_LoadingVariables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
