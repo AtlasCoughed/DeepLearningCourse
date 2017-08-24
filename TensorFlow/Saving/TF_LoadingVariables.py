@@ -12,6 +12,8 @@ with tf.Session() as sess:
     # Load the weights and bias
     saver.restore(sess, save_file)
 
+    # Since tf.train.Saver.restore() sets all the TensorFlow Variables, you don't need to call tf.global_variables_initializer().
+
     # Show the values of weights and bias
     print('Weight:')
     print(sess.run(weights))

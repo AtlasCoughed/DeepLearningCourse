@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09a695fd-efc2-4fa6-8957-18379b318f4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlow/TF_LoadingVariables.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlow/TF_SavingWeightsBiases.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlow/Convolutional_Networks/Part1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlow/Convolutional_Networks/Part2_ConvolutionalLayer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlow/DropOut/Dropout_Ex1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TensorFlow/Saving/TF_SavingModel.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TensorFlow/TF_LoadingVariables.py" afterPath="$PROJECT_DIR$/TensorFlow/Saving/TF_LoadingVariables.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TensorFlow/TF_SavingWeightsBiases.py" afterPath="$PROJECT_DIR$/TensorFlow/Saving/TF_SavingWeightsBiases.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,6 +24,7 @@
     <SUITE FILE_PATH="coverage/Notes$LinearRegressionGradientDescent.coverage" NAME="LinearRegressionGradientDescent Coverage Results" MODIFIED="1501263138129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DeepLearningCourse$MiniFlow_BackwardsPropogation.coverage" NAME="MiniFlow_BackwardsPropogation Coverage Results" MODIFIED="1502852931691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Notes$neuralNet.coverage" NAME="neuralNet Coverage Results" MODIFIED="1501262927753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DeepLearningCourse$Part1.coverage" NAME="Part1 Coverage Results" MODIFIED="1503523697293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TensorFlow/Convolutional_Networks" />
     <SUITE FILE_PATH="coverage/Notes$BackPropogation.coverage" NAME="BackPropogation Coverage Results" MODIFIED="1501828705262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -28,26 +33,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TF_ReLu.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TensorFlow/TF_ReLu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TF_Mini_Batch_Calculations.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TensorFlow/TF_Mini_Batch_Calculations.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TF_Mini_batch.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TensorFlow/TF_Mini_batch.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,7 +78,7 @@
         </entry>
       </file>
       <file leaf-file-name="TF_SavingWeightsBiases.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TensorFlow/TF_SavingWeightsBiases.py">
+        <entry file="file://$PROJECT_DIR$/TensorFlow/Saving/TF_SavingWeightsBiases.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
@@ -102,11 +87,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TF_LoadingVariables.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TensorFlow/TF_LoadingVariables.py">
+      <file leaf-file-name="TF_LoadingVariables.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TensorFlow/Saving/TF_LoadingVariables.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TF_SavingModel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TensorFlow/Saving/TF_SavingModel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+              <folding>
+                <element signature="e#67#125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dropout_Ex1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TensorFlow/DropOut/Dropout_Ex1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Part1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TensorFlow/Convolutional_Networks/Part1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="79" lean-forward="false" selection-start-line="29" selection-start-column="79" selection-end-line="29" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Part2_ConvolutionalLayer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TensorFlow/Convolutional_Networks/Part2_ConvolutionalLayer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,6 +191,10 @@
         <option value="$PROJECT_DIR$/TensorFlow/TF_Deep_Neural_Net.py" />
         <option value="$PROJECT_DIR$/TensorFlow/TF_SavingWeightsBiases.py" />
         <option value="$PROJECT_DIR$/TensorFlow/TF_LoadingVariables.py" />
+        <option value="$PROJECT_DIR$/TensorFlow/Saving/TF_SavingModel.py" />
+        <option value="$PROJECT_DIR$/TensorFlow/DropOut/Dropout_Ex1.py" />
+        <option value="$PROJECT_DIR$/TensorFlow/Convolutional_Networks/Part1.py" />
+        <option value="$PROJECT_DIR$/TensorFlow/Convolutional_Networks/Part2_ConvolutionalLayer.py" />
       </list>
     </option>
   </component>
@@ -219,6 +250,60 @@
               <option name="myItemId" value="DeepLearningCourse" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TensorFlow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Saving" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeepLearningCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeepLearningCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TensorFlow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DropOut" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeepLearningCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeepLearningCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TensorFlow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Convolutional_Networks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeepLearningCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeepLearningCourse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -236,6 +321,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TensorFlow/Saving" />
       <recent name="$PROJECT_DIR$/Pre-MiniFlow" />
       <recent name="$PROJECT_DIR$/MiniFlow" />
     </key>
@@ -252,25 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Classification">
-    <configuration default="false" name="BackPropogation" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Notes" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pre-MiniFlow/BackPropogation.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.Part1">
     <configuration default="false" name="MiniFlow_BackwardsPropogation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -339,6 +407,24 @@
       <module name="Notes" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TensorFlow/Classification.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Part1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TensorFlow/Convolutional_Networks" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Notes" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TensorFlow/Convolutional_Networks/Part1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -558,19 +644,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.BackPropogation" />
-      <item index="1" class="java.lang.String" itemvalue="Python.MiniFlow_BackwardsPropogation" />
-      <item index="2" class="java.lang.String" itemvalue="Python.helllo_World" />
-      <item index="3" class="java.lang.String" itemvalue="Python.TensorFlow_Math" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Classification" />
+      <item index="0" class="java.lang.String" itemvalue="Python.MiniFlow_BackwardsPropogation" />
+      <item index="1" class="java.lang.String" itemvalue="Python.helllo_World" />
+      <item index="2" class="java.lang.String" itemvalue="Python.TensorFlow_Math" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Classification" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Part1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Classification" />
-        <item index="1" class="java.lang.String" itemvalue="Python.TensorFlow_Math" />
-        <item index="2" class="java.lang.String" itemvalue="Python.helllo_World" />
-        <item index="3" class="java.lang.String" itemvalue="Python.MiniFlow_BackwardsPropogation" />
-        <item index="4" class="java.lang.String" itemvalue="Python.BackPropogation" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Part1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Classification" />
+        <item index="2" class="java.lang.String" itemvalue="Python.TensorFlow_Math" />
+        <item index="3" class="java.lang.String" itemvalue="Python.helllo_World" />
+        <item index="4" class="java.lang.String" itemvalue="Python.MiniFlow_BackwardsPropogation" />
       </list>
     </recent_temporary>
   </component>
@@ -604,12 +690,12 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28433734" sideWeight="0.52503574" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34578314" sideWeight="0.52575105" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.48855507" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34578314" sideWeight="0.47711015" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34578314" sideWeight="0.47424892" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28433734" sideWeight="0.47496423" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28433734" sideWeight="0.47496423" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11015737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -638,14 +724,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Pre-MiniFlow/neuralNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MiniFlow/MiniFlow_Sigmoid.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1014,7 +1092,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TensorFlow/TF_SavingWeightsBiases.py">
+    <entry file="file://$PROJECT_DIR$/TensorFlow/Saving/TF_SavingWeightsBiases.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
@@ -1022,10 +1100,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TensorFlow/TF_LoadingVariables.py">
+    <entry file="file://$PROJECT_DIR$/TensorFlow/Saving/TF_LoadingVariables.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TensorFlow/Saving/TF_SavingModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+          <folding>
+            <element signature="e#67#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TensorFlow/DropOut/Dropout_Ex1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TensorFlow/Convolutional_Networks/Part1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="79" lean-forward="false" selection-start-line="29" selection-start-column="79" selection-end-line="29" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TensorFlow/Convolutional_Networks/Part2_ConvolutionalLayer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
